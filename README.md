@@ -27,7 +27,7 @@ Como Usar
 
 Clonar o repositório:
 
-git clone https://github.com/seu-usuario/dashboard.git
+git clone https://github.com/mathohub/dashboard.git
 
 Abrir o arquivo index.html:
 Abra o arquivo diretamente no navegador ou use uma ferramenta como o Live Server do VS Code para visualização ao vivo.
