@@ -57,5 +57,33 @@
       <!-- Informações do Rodapé -->
       <p>© 2024 InsightHub</p>
     </footer>
+
+    <script>
+      // Função para adicionar uma atividade recente
+      function addActivity(activityText) {
+          const activityLog = document.querySelector('.recent-activities');
+          
+          // Cria um novo item para a atividade
+          const newActivity = document.createElement('p');
+          newActivity.textContent = `${new Date().toLocaleTimeString()} - ${activityText}`;
+          newActivity.style.margin = '10px 0'; // Estilo simples para margens
+          
+          // Adiciona a nova atividade ao final da seção de atividades recentes
+          activityLog.appendChild(newActivity);
+      }
+
+      // Adicionando eventos aos links do menu e cabeçalho
+      document.querySelectorAll('nav a').forEach(link => {
+          link.addEventListener('click', (event) => {
+              addActivity(` ${event.target.textContent}`);
+          });
+      });
+
+      document.querySelectorAll('aside ul li a').forEach(link => {
+          link.addEventListener('click', (event) => {
+              addActivity(` ${event.target.textContent}`);
+          });
+      });
+  </script>
   </body>
 </html>

@@ -1,148 +1,167 @@
 /* Geral */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #ffffff;
-  }
-  
-  /* Cabeçalho */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+}
+
+/* Cabeçalho */
 header {
-    background: linear-gradient(90deg, #000000, #434343); /* Gradiente */
-    color: #ffffff;
-    padding: 10px 20px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1000;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
-  }
-  
-  /* Logo */
-  header .logo {
-    font-size: 24px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-  }
-  
-  /* Menu de Navegação */
-  nav {
-    display: flex;
-    justify-content: space-around;
-    gap: 20px;
-  }
-  
-  nav a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 16px;
-    padding: 8px 15px;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
-  }
-  
-  nav a:hover {
-    background-color: #ffffff;
-    color: #000000;
-  }
-  
-  /* Ícones de Navegação */
-  nav a i {
-    margin-right: 8px; /* Espaçamento entre o ícone e o texto */
-  }
-  
-  /* Menu Lateral */
-  aside {
-    width: 220px; /* Largura fixa do menu */
-    position: fixed;
-    top: 60px; /* Abaixo do cabeçalho */
-    left: 0;
-    bottom: 0;
-    background-color: #2c3e50; /* Cor mais escura para o menu */
-    color: #fff;
-    padding: 20px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Sombra para separação */
-    z-index: 1000; /* Garantir que o menu fique acima do conteúdo */
-  }
-  
-  aside h2 {
-    margin-bottom: 20px;
-    font-size: 18px;
-    color: #ffffff; /* Cor mais clara para o texto */
-  }
-  
-  aside ul {
-    list-style-type: none;
-  }
-  
-  aside ul li {
-    margin-bottom: 15px;
-  }
-  
-  aside ul li a {
-    color: #ecf0f1;
-    text-decoration: none;
-    font-size: 16px;
-    display: block;
-    padding: 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
-  
-  aside ul li a:hover {
-    background-color: #34495e; /* Cor de hover mais clara */
-    color: #fff;
-  }
-  
-  /* Conteúdo Principal */
-  main {
-    margin-left: 240px; /* Espaço aumentado para o menu lateral */
-    padding: 20px;
-    margin-top: 80px; /* Espaço para o cabeçalho */
-    background-color: #7fb3c0; /* Cor clara para o fundo do conteúdo */
-    min-height: 100vh;
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05); /* Sombra interna leve */
-    border-radius: 5px;
-  }
-  
-  /* Cards de Estatísticas */
-  .stats-cards {
-    display: flex;
-    gap: 20px;
-    justify-content: space-between;
-  }
-  
-  .card {
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    width: 250px;
-    height: 150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  /* Rodapé */
-  footer {
-    background-color: #34495e;
-    color: rgb(255, 253, 253);
-    text-align: center;
-    padding: 20px;
-    position: relative; /* Alterado para relativo */
-    margin-left: 240px; /* Para não ficar atrás do menu lateral */
-    width: calc(100% - 240px);
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Sombra para separação */
+  background: linear-gradient(90deg, #000000, #434343); /* Gradiente */
+  color: #ffffff;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/* Logo */
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Menu de Navegação */
+nav {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Ícones de Navegação */
+nav a i {
+  margin-right: 8px; /* Espaçamento entre o ícone e o texto */
+}
+
+/* Menu Lateral */
+aside {
+  width: 220px; /* Largura fixa do menu */
+  position: fixed;
+  top: 60px; /* Abaixo do cabeçalho */
+  left: 0;
+  bottom: 0;
+  background-color: #2c3e50; /* Cor mais escura para o menu */
+  color: #fff;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Sombra para separação */
+  z-index: 1000; /* Garantir que o menu fique acima do conteúdo */
+}
+
+aside h2 {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #ffffff; /* Cor mais clara para o texto */
+}
+
+aside ul {
+  list-style-type: none;
+}
+
+aside ul li {
+  margin-bottom: 15px;
+}
+
+aside ul li a {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+aside ul li a:hover {
+  background-color: #34495e; /* Cor de hover mais clara */
+  color: #fff;
+}
+
+/* Conteúdo Principal */
+main {
+  margin-left: 240px; /* Espaço aumentado para o menu lateral */
+  padding: 20px;
+  margin-top: 80px; /* Espaço para o cabeçalho */
+  background-color: #7fb3c0; /* Cor clara para o fundo do conteúdo */
+  min-height: calc(100vh - 80px); /* Mantido para evitar sobreposição */
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05); /* Sombra interna leve */
+  border-radius: 5px;
+}
+
+/* Cards de Estatísticas */
+.stats-cards {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: 250px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Atividades Recentes */
+.recent-activities {
+  margin-top: 20px;
+}
+
+#activity-log {
+  list-style-type: none;
+  padding: 0;
+}
+
+#activity-log li {
+  background-color: #f4f4f9;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Rodapé */
+footer {
+  background-color: #34495e;
+  color: rgb(255, 253, 253);
+  text-align: center;
+  padding: 20px;
+  position: relative; /* Alterado para relativo */
+  margin-left: 240px; /* Para não ficar atrás do menu lateral */
+  width: calc(100% - 240px);
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Sombra para separação */
 }
