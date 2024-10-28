@@ -1,43 +1,61 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <title>Dashboard</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Dashboard</title>
+        <link rel="stylesheet" href="styles.css" />
+         <!-- Adicionando fontes-->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+      </head>
   <body>
     <!-- Cabeçalho Fixo -->
     <header>
-      <nav>
-        <!-- Menu de Navegação -->
-        <a href="#">Home</a>
-        <a href="#">Estatísticas</a>
-        <a href="#">Configurações</a>
-      </nav>
-      <!-- Ícone de Notificações -->
-    </header>
+        <div class="logo">InsightHub</div>
+        <nav>
+          <a href="#"><i class="fas fa-home"></i> Home</a>
+          <a href="#"><i class="fas fa-chart-line"></i> Estatísticas</a>
+          <a href="#"><i class="fas fa-cog"></i> Configurações</a>
+        </nav>
+      </header>
     <!-- Menu Lateral -->
-    <h2>Menu</h2>
-    <ul>
-      <li><a href="#">Dashboard</a></li>
-      <li><a href="#">Relatórios</a></li>
-      <li><a href="#">Usuários</a></li>
-    </ul>
     <aside>
-      <!-- Itens do Menu -->
-    </aside>
+        <h2>Menu</h2>
+        <ul>
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">Relatórios</a></li>
+          <li><a href="#">Usuários</a></li>
+        </ul>
+      </aside>
     <!-- Conteúdo Principal -->
     <main>
       <!-- Cards de Estatísticas -->
+      <section class="stats-cards">
+        <div class="card">
+          <h3>Usuários Ativos</h3>
+          <p>1500</p>
+        </div>
+        <div class="card">
+          <h3>Novos Registros</h3>
+          <p>200</p>
+        </div>
+        <div class="card">
+          <h3>Vendas</h3>
+          <p>350</p>
+        </div>
+      </section>
+
       <!-- Lista de Atividades Recentes -->
+      <section class="recent-activities">
+        <h2><br>Atividades Recentes</h2>
+        <!-- Adicionar conteúdo -->
+      </section>
     </main>
     <!-- Rodapé -->
     <footer>
       <!-- Informações do Rodapé -->
+      <p>© 2024 InsightHub</p>
     </footer>
   </body>
 </html>
